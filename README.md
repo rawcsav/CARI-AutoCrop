@@ -8,7 +8,7 @@ Before you begin, ensure you have the following installed on your computer:
    - Download and install Python from the official website: [Python Downloads](https://www.python.org/downloads/)
    - Make sure to check the box that says "Add Python to PATH" during installation.
 
-2**Git**
+2. **Git**
    - Download and install Git from the official website: [Git Downloads](https://git-scm.com/downloads)
    - Verify the installation by running:
      ```sh
