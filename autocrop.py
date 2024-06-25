@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-def process_image(filename, input_folder, output_folder, threshold=60):
+def process_image(filename, input_folder, output_folder, threshold=40):
     try:
         img_path = os.path.join(input_folder, filename)
         img = cv2.imread(img_path)
@@ -78,7 +78,7 @@ def main():
     parser.add_argument("-i", "--image", action='append',
                         help="Individual image to process")
     parser.add_argument("-o", "--output", required=True, help="Base output directory")
-    parser.add_argument("-t", "--threshold", type=int, default=60,
+    parser.add_argument("-t", "--threshold", type=int, default=40,
                         help="Threshold for determining black borders (0-255)")
     parser.add_argument("-w", "--workers", type=int, default=os.cpu_count(),
                         help="Number of worker threads (default: number of CPU cores)")
