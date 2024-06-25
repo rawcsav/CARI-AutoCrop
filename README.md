@@ -5,7 +5,7 @@
 Before you begin, ensure you have the following installed on your computer:
 
 1. **Python 3.10**
-   - Download and install Python from the official website: [Python Downloads](https://www.python.org/downloads/)
+   - Download and install Python 3.10 from the official website: [Python Downloads](https://www.python.org/downloads/)
    - Make sure to check the box that says "Add Python to PATH" during installation.
 
 2. **Git**
@@ -68,27 +68,27 @@ Adjust this value if you find that the script is cropping too much (threshold to
 
 1. **Process a Single Folder:**
    ```sh
-   python crop_borders.py -f /Users/YourName/Pictures/InputFolder -o /Users/YourName/Pictures/OutputFolder
+   python autocrop.py -f /Users/YourName/Pictures/InputFolder -o /Users/YourName/Pictures/OutputFolder
    ```
 
 2. **Process Multiple Folders:**
    ```sh
-   python crop_borders.py -f /Users/YourName/Folder1 -f /Users/YourName/Folder2 -o /Users/YourName/Output
+   python autocrop.py -f /Users/YourName/Folder1 -f /Users/YourName/Folder2 -o /Users/YourName/Output
    ```
 
 3. **Process Individual Images:**
    ```sh
-   python crop_borders.py -i /Users/YourName/image1.jpg -i /Users/YourName/image2.png -o /Users/YourName/Output
+   python autocrop.py -i /Users/YourName/image1.jpg -i /Users/YourName/image2.png -o /Users/YourName/Output
    ```
 
 4. **Mix Folders and Individual Images:**
    ```sh
-   python crop_borders.py -f /Users/YourName/Folder1 -i /Users/YourName/image1.jpg -o /Users/YourName/Output
+   python autocrop.py -f /Users/YourName/Folder1 -i /Users/YourName/image1.jpg -o /Users/YourName/Output
    ```
 
 5. **Set a Custom Threshold and Number of Workers:**
    ```sh
-   python crop_borders.py -f /Users/YourName/Folder1 -o /Users/YourName/Output -t 50 -w 4
+   python autocrop.py -f /Users/YourName/Folder1 -o /Users/YourName/Output -t 50 -w 4
    ```
 
 ## Notes
